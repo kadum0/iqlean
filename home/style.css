@@ -92,6 +92,7 @@
             justify-content: center;
             align-items: center;
             border-radius: .6rem;
+            /* pointer-events: none; */
         }
         
         main img{
@@ -171,7 +172,9 @@
             transition: 1s linear;
         }
 
+        #displaylines{
 
+        }
         #displayControllers{
             position: absolute;
             display: flex;
@@ -270,8 +273,10 @@
         .logo {
             height: max-content;
             width: max-content;
-            height: 4rem;
-            width: 4rem;
+            /* height: 4rem; */
+            /* width: 4rem; */
+            height: 6vh;
+            width: 6vh;
             z-index: 1001;
         }
 
@@ -459,6 +464,7 @@
         
         body {
             margin: 0%;
+            padding: 0%;
             box-sizing: border-box;
             width: 100vw;
             max-width: 100vw;
@@ -502,19 +508,29 @@
         }
 
 @media all and (max-width: 500px){
+    body{
+        height: 100vh;
+        width: 100vw;
+    }
+    #displaylines{
+        text-align: center;
+        font-size: 1rem;
+    }
 
     .body{
         /* display: block; */
         justify-content: center;
     }
+
     body *{
-        font-size: 1rem;
+        /* font-size: .1rem; */
     }
+
     #profile{
         transform: translateY(0);
         /* top: .5rem; */
         width: 100vw;
-        height: 32vh;
+        height: 25vh;
     }
     /* #map{
         margin: 6rem 3rem 0 0 ;
@@ -524,17 +540,12 @@
         height: 100%;
         overflow-x: scroll;
     }
-
-    #beforeImgs img, #afterImgs img{
-        max-width: 10rem;
-        max-height: 10rem;
-    }
     #beforeImgs img, #afterImgs img, .smType {
-        background-image: url("../../Telegram-Logo.png");
+        /* background-image: url("../../Telegram-Logo.png"); */
         background-size: cover;
         background-position: center;
-        min-width: 10rem;
-        min-height: 10rem;
+        min-width: 22vh;
+        min-height: 22vh;
     }
     
     footer{

@@ -421,8 +421,11 @@ document.addEventListener("click", (e)=>{
 
     if (!e.target.classList.contains('leaflet-marker-icon')){
         document.querySelector("#profile").style.zIndex = "1"
+        document.querySelector("#profile").style.pointerEvents = "none"
+
     }else{
         document.querySelector("#profile").style.zIndex = "1002"
+        document.querySelector("#profile").style.pointerEvents = "all"
     }
 
 })
