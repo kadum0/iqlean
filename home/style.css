@@ -93,6 +93,7 @@
             align-items: center;
             border-radius: .6rem;
             /* pointer-events: none; */
+            /* pointer-events: ; */
         }
         
         main img{
