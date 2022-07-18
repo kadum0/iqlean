@@ -417,6 +417,11 @@
 
         /* elements */
 
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    
         b{
             color:red;
         }
